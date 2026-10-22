@@ -1,0 +1,10 @@
+Student ID: 230103278 | Logical cores: 12 | N = 20,000,000 | P = 0.95
+Wall time = best of 3 runs
+
+ Cores | Wall Time (ms) |  Speedup | Amdahl Upper Bound
+--------------------------------------------------------
+     1 |           7.47 |    1.00x |              1.00x
+     2 |           7.42 |    1.01x |              1.90x
+     4 |           7.30 |    1.02x |              3.48x
+    12 |           7.39 |    1.01x |              7.74x
+    24 |           8.37 |    0.89x |             11.16x
