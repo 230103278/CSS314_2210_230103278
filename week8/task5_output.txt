@@ -1,0 +1,13 @@
+Student ID: 230103278 | Workers: 12 threads (persistent pool) | y = 2.5 * x + 1.0
+Wall time = best of many runs
+
+           N |  Serial (ms) | Parallel (ms) |  Speedup | Winner
+------------------------------------------------------------------
+         100 |       0.0026 |        0.2301 |    0.01x | serial
+       1,000 |       0.0023 |        0.2303 |    0.01x | serial
+      10,000 |       0.0054 |        0.2761 |    0.02x | serial
+     100,000 |       0.0477 |        0.3519 |    0.14x | serial
+   1,000,000 |       0.5282 |        0.6199 |    0.85x | serial
+  10,000,000 |      15.0044 |       16.1606 |    0.93x | serial
+
+Parallel never stays faster than serial up to N = 10,000,000 on this CPU.
