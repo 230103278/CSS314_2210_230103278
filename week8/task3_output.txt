@@ -1,0 +1,6 @@
+Student ID: 230103278 | Physical cores (workers): 6 | Iterations/worker: 50,000,000
+Wall time = best of 3 runs
+
+Unpadded Shared (8 B apart, same cache line):   11450.00 ms
+Padded          (128 B apart)               :    4497.39 ms
+Ratio (Unpadded / Padded)                   :       2.55x
