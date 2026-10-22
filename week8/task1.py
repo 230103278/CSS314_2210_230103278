@@ -9,7 +9,6 @@ N = 20_000_000
 
 
 def cpu_model():
-    # platform.processor() is often empty on Linux, so read /proc/cpuinfo there
     try:
         with open("/proc/cpuinfo") as f:
             for line in f:
@@ -28,7 +27,6 @@ print(f"Logical cores: {os.cpu_count()}")
 data = np.random.default_rng(STUDENT_ID).random(N, dtype=np.float64)
 print(f"Array: {data.size:,} float64 elements")
 
-# numpy reductions run in a single thread
 start = time.perf_counter()
 total = data.sum()
 std = data.std()
