@@ -1,0 +1,13 @@
+Student ID: 230103278 | Tasks: 10,000 x sha256(64 KB) x 8 | Logical cores: 12 | best of 3 runs
+
+Pool Size | Execution Time (ms) | Speedup vs 1 thread | Status
+--------------------------------------------------------------------------------
+        1 |             2624.00 |               1.00x | scaling
+        6 |              500.29 |               5.24x | scaling
+       12 |              369.81 |               7.10x | OPTIMAL (fastest)
+       24 |              423.33 |               6.20x | DEGRADED (+14.5% vs best)  <-- worsening starts here
+       48 |              438.38 |               5.99x | DEGRADED (+18.5% vs best)
+      192 |              486.79 |               5.39x | DEGRADED (+31.6% vs best)
+      256 |              518.53 |               5.06x | DEGRADED (+40.2% vs best)
+
+Execution time starts worsening at pool size 24 (best was 12 threads on 12 logical cores).
