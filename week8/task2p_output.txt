@@ -1,0 +1,5 @@
+Student ID: 230103278 | Samples: 40,000,000 | Threads: 4 | Batch: 100,000 | best of 3 runs
+
+Shared PRNG (mutex):             pi = 3.14116470  |error| = 0.00042795     553.56 ms
+Independent PRNG (seed=ID*10+t): pi = 3.14138170  |error| = 0.00021095     165.07 ms
+Speedup from removing generator locking: 3.35x

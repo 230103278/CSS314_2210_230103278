@@ -1,4 +1,4 @@
-Student ID: 230103278 | Logical cores: 12 | Physical cores (workers): 6
+Student ID: 230103278 | Logical cores: 12 | Physical cores (workers):
 Matrix: 8,000 x 8,000 float64 (488 MiB) | best of 3 runs
 
 Mode A (Row-Major):                100.33 ms  sum = 31,999,594.4459
