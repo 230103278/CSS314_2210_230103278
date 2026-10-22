@@ -1,0 +1,7 @@
+Student ID: 230103278 | N = 2,000,000 ints in [1, 10] | Workers: 6 (physical cores) | best of 5 runs
+
+Serial Time (ms) | Parallel Time (ms) |  Speedup | Verification Status
+----------------------------------------------------------------------
+    4.244        |      6.834        |    0.62x  | PASS
+
+Last element: serial = 10,996,162 | parallel = 10,996,162
