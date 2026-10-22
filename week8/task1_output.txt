@@ -1,0 +1,8 @@
+Student ID: 230103278
+OS: Linux 7.2.11-arch1-1 (Linux-7.2.11-arch1-1-x86_64-with-glibc2.44)
+CPU: AMD Ryzen 5 8645HS w/ Radeon 760M Graphics
+Logical cores: 12
+Array: 20,000,000 float64 elements
+Sum: 10000816.355872
+Std dev: 0.288642
+Serial execution time: 58.69 ms
