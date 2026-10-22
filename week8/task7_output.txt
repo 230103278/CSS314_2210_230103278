@@ -1,0 +1,15 @@
+Student ID: 230103278 | N = 30,000,000 float64 | Max cores: 12 | best of 5 runs
+
+Kernel           | Cores |  Wall (ms) |  Speedup | Efficiency | RAM traffic
+------------------------------------------------------------------------------
+A: copy          |     1 |      17.49 |    1.00x |    100.0% |   27.4 GB/s
+A: copy          |     2 |      14.63 |    1.20x |     59.8% |   32.8 GB/s
+A: copy          |    12 |      17.05 |    1.03x |      8.5% |   28.2 GB/s
+------------------------------------------------------------------------------
+B: sin*cos+tan   |     1 |     541.51 |    1.00x |    100.0% |    0.9 GB/s
+B: sin*cos+tan   |     2 |     308.88 |    1.75x |     87.7% |    1.6 GB/s
+B: sin*cos+tan   |    12 |     132.60 |    4.08x |     34.0% |    3.6 GB/s
+------------------------------------------------------------------------------
+
+Verdict: Kernel A: copy stalled in scaling due to memory channel saturation (8.5% efficiency at 12 cores).
+Kernel B: sin*cos+tan is compute-bound and kept scaling (34.0% efficiency at 12 cores)
