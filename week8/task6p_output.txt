@@ -1,0 +1,9 @@
+Student ID: 230103278 | Workers: 4 | Increments/worker: 2,000,000
+
+Version                          |   Expected |     Actual |    Lost |  Wall (ms)
+----------------------------------------------------------------------------------
+Processes, no lock (race)        |  8,000,000 |  2,302,862 |  71.21% |     779.26
+Processes, multiprocessing.Lock  |  8,000,000 |  8,000,000 |   0.00% |    7762.67
+Threads, no lock (GIL, ref.)     |  8,000,000 |  8,000,000 |   0.00% |     381.94
+
+Lock penalty: +6983.40 ms (9.96x slower than the racy version)
