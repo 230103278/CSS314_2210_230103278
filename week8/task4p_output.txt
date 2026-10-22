@@ -1,0 +1,8 @@
+Student ID: 230103278 | float64 arrays sent to a child process | best of 5 round trips
+Path A: pickle through multiprocessing.Pipe | Path B: shared_memory, only the name crosses the pipe
+
+           N | Size (MB) | A: Pickle (ms) | B: Shared (ms) |    A / B
+----------------------------------------------------------------------
+     100,000 |       0.8 |          1.059 |          0.490 |     2.2x
+   1,000,000 |       8.0 |          8.342 |          0.462 |    18.1x
+  10,000,000 |      80.0 |        172.430 |          0.475 |   363.0x
