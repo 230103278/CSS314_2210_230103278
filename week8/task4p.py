@@ -9,7 +9,6 @@ REPEATS = 5
 
 
 def consumer(conn):
-    # long-lived child, so process start-up is never part of a measurement
     while (msg := conn.recv()) is not None:
         if msg[0] == "pickle":
             arr = msg[1]
@@ -51,7 +50,6 @@ if __name__ == "__main__":
 
             a_ms, a_reply = best_ms(parent, ("pickle", x))
 
-            # producer writes its data straight into shared memory (setup, not timed)
             shm = shared_memory.SharedMemory(create=True, size=x.nbytes)
             try:
                 np.ndarray(x.shape, dtype=x.dtype, buffer=shm.buf)[:] = x
