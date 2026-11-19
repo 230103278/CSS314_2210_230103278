@@ -1,0 +1,71 @@
+{
+  "github_username": "230103278",
+  "gpu_uuid": "GPU-9f464241-9201-a2c6-af69-f3df6f6794fd",
+  "instance_seed": 3157701663442476547,
+  "mpi_ranks": 4,
+  "cart_dims": [
+    2,
+    2
+  ],
+  "cart_periods": [
+    false,
+    false
+  ],
+  "global_interior_shape": [
+    512,
+    512
+  ],
+  "local_padded_shape": [
+    258,
+    258
+  ],
+  "tile_dim": 16,
+  "shared_tile_dim": 18,
+  "steps": 400,
+  "dx": 0.001949317738791423,
+  "dt": 3.1665369491083255e-06,
+  "kappa_min": 0.08000051185745685,
+  "kappa_max": 0.23999970364071793,
+  "dt_max_cfl": 3.958171186385407e-06,
+  "lambda_damp": 0.15,
+  "energy_trace": [
+    {
+      "step": 0,
+      "energy": 0.09651719477151445,
+      "l2_residual": 0.0
+    },
+    {
+      "step": 100,
+      "energy": 0.09644360171981244,
+      "l2_residual": 5.973907952516041e-05
+    },
+    {
+      "step": 200,
+      "energy": 0.09639302150884156,
+      "l2_residual": 5.6381195827499535e-05
+    },
+    {
+      "step": 300,
+      "energy": 0.09634532372860705,
+      "l2_residual": 5.344835238406277e-05
+    },
+    {
+      "step": 400,
+      "energy": 0.09629827329496024,
+      "l2_residual": 5.084172581594878e-05
+    }
+  ],
+  "serialized_ms": 917.9047241210938,
+  "overlapped_ms": 1286.1275634765625,
+  "overlap_speedup": 0.7136964871819428,
+  "timing_method": "CUDA events on stream_boundary around the 400-step loop, max over ranks",
+  "parity_max_diff": 0.0,
+  "parity_passed": true,
+  "ptx_counts": {
+    "st.shared.f64": 5,
+    "ld.shared.f64": 5,
+    "bar.sync": 1
+  },
+  "ptx_audit_passed": true,
+  "generated_utc": "2026-11-19T07:01:12.998589+00:00"
+}
