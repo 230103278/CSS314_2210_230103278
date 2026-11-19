@@ -1,0 +1,367 @@
+{
+  "git_username": "230103278",
+  "instance_seed": 9750467391610345033,
+  "cpu_model": "AMD Ryzen 5 8645HS w/ Radeon 760M Graphics",
+  "cpu_sig": "x86_64::::12",
+  "python": "3.12.13",
+  "logical_cores": 12,
+  "cache_line_size": 64,
+  "affinity_cpus": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "num_threads": 4,
+  "iterations_per_thread": 60000000,
+  "repeats": 3,
+  "strides": {
+    "1": {
+      "stride": 1,
+      "slot_byte_offsets": [
+        0,
+        8,
+        16,
+        24
+      ],
+      "cache_lines": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "line_pairs_128B": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "median_ns": 708233655,
+      "ns_per_update": 11.80389425,
+      "runs": [
+        {
+          "elapsed_ns": 876055630,
+          "voluntary_ctx_switches": 6,
+          "involuntary_ctx_switches": 84,
+          "final_counters": [
+            240000000,
+            420000000,
+            180000000,
+            360000000
+          ]
+        },
+        {
+          "elapsed_ns": 706687858,
+          "voluntary_ctx_switches": 4,
+          "involuntary_ctx_switches": 90,
+          "final_counters": [
+            240000000,
+            420000000,
+            180000000,
+            360000000
+          ]
+        },
+        {
+          "elapsed_ns": 708233655,
+          "voluntary_ctx_switches": 7,
+          "involuntary_ctx_switches": 81,
+          "final_counters": [
+            240000000,
+            420000000,
+            180000000,
+            360000000
+          ]
+        }
+      ]
+    },
+    "4": {
+      "stride": 4,
+      "slot_byte_offsets": [
+        0,
+        32,
+        64,
+        96
+      ],
+      "cache_lines": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "line_pairs_128B": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "median_ns": 154485126,
+      "ns_per_update": 2.5747521,
+      "runs": [
+        {
+          "elapsed_ns": 154485126,
+          "voluntary_ctx_switches": 5,
+          "involuntary_ctx_switches": 25,
+          "final_counters": [
+            240000000,
+            420000000,
+            180000000,
+            360000000
+          ]
+        },
+        {
+          "elapsed_ns": 165665856,
+          "voluntary_ctx_switches": 8,
+          "involuntary_ctx_switches": 29,
+          "final_counters": [
+            240000000,
+            420000000,
+            180000000,
+            360000000
+          ]
+        },
+        {
+          "elapsed_ns": 152311705,
+          "voluntary_ctx_switches": 7,
+          "involuntary_ctx_switches": 23,
+          "final_counters": [
+            240000000,
+            420000000,
+            180000000,
+            360000000
+          ]
+        }
+      ]
+    },
+    "8": {
+      "stride": 8,
+      "slot_byte_offsets": [
+        0,
+        64,
+        128,
+        192
+      ],
+      "cache_lines": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "line_pairs_128B": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "median_ns": 36026883,
+      "ns_per_update": 0.60044805,
+      "runs": [
+        {
+          "elapsed_ns": 36026883,
+          "voluntary_ctx_switches": 4,
+          "involuntary_ctx_switches": 6,
+          "final_counters": [
+            240000000,
+            420000000,
+            180000000,
+            360000000
+          ]
+        },
+        {
+          "elapsed_ns": 42754260,
+          "voluntary_ctx_switches": 6,
+          "involuntary_ctx_switches": 6,
+          "final_counters": [
+            240000000,
+            420000000,
+            180000000,
+            360000000
+          ]
+        },
+        {
+          "elapsed_ns": 35099590,
+          "voluntary_ctx_switches": 9,
+          "involuntary_ctx_switches": 5,
+          "final_counters": [
+            240000000,
+            420000000,
+            180000000,
+            360000000
+          ]
+        }
+      ]
+    },
+    "16": {
+      "stride": 16,
+      "slot_byte_offsets": [
+        0,
+        128,
+        256,
+        384
+      ],
+      "cache_lines": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "line_pairs_128B": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "median_ns": 30683898,
+      "ns_per_update": 0.5113983,
+      "runs": [
+        {
+          "elapsed_ns": 30683898,
+          "voluntary_ctx_switches": 8,
+          "involuntary_ctx_switches": 3,
+          "final_counters": [
+            240000000,
+            420000000,
+            180000000,
+            360000000
+          ]
+        },
+        {
+          "elapsed_ns": 34451208,
+          "voluntary_ctx_switches": 5,
+          "involuntary_ctx_switches": 10,
+          "final_counters": [
+            240000000,
+            420000000,
+            180000000,
+            360000000
+          ]
+        },
+        {
+          "elapsed_ns": 29311640,
+          "voluntary_ctx_switches": 7,
+          "involuntary_ctx_switches": 6,
+          "final_counters": [
+            240000000,
+            420000000,
+            180000000,
+            360000000
+          ]
+        }
+      ]
+    }
+  },
+  "private_baseline": {
+    "stride": 1,
+    "slot_byte_offsets": [
+      0,
+      8,
+      16,
+      24
+    ],
+    "cache_lines": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "line_pairs_128B": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "median_ns": 29002111,
+    "ns_per_update": 0.4833685166666667,
+    "runs": [
+      {
+        "elapsed_ns": 29002111,
+        "voluntary_ctx_switches": 7,
+        "involuntary_ctx_switches": 3,
+        "final_counters": [
+          240000000,
+          420000000,
+          180000000,
+          360000000
+        ]
+      },
+      {
+        "elapsed_ns": 29025737,
+        "voluntary_ctx_switches": 8,
+        "involuntary_ctx_switches": 5,
+        "final_counters": [
+          240000000,
+          420000000,
+          180000000,
+          360000000
+        ]
+      },
+      {
+        "elapsed_ns": 28499957,
+        "voluntary_ctx_switches": 10,
+        "involuntary_ctx_switches": 8,
+        "final_counters": [
+          240000000,
+          420000000,
+          180000000,
+          360000000
+        ]
+      }
+    ]
+  },
+  "slowdown_stride1_vs_stride8": 19.6584771155473,
+  "slowdown_stride4_vs_stride8": 4.288051397618828,
+  "ratio_stride16_vs_stride8": 0.851694497134265,
+  "speedup_private_vs_stride8": 1.2422158855953624,
+  "gil_contrast_pure_python": {
+    "1_threads": {
+      "elapsed_ns": 932006454,
+      "updates_per_thread": 8000000,
+      "ns_per_update_wall": 116.50080675,
+      "voluntary_ctx_switches": 1,
+      "involuntary_ctx_switches": 7
+    },
+    "4_threads": {
+      "elapsed_ns": 1034430562,
+      "updates_per_thread": 2000000,
+      "ns_per_update_wall": 129.30382025,
+      "voluntary_ctx_switches": 1014,
+      "involuntary_ctx_switches": 37
+    },
+    "slowdown_4_vs_1": 1.1098963505675465
+  },
+  "expected_final_counters": [
+    240000000,
+    420000000,
+    180000000,
+    360000000
+  ],
+  "parity_passed": true,
+  "llvm_audit": {
+    "native_functions": 2,
+    "store_i64": 9,
+    "load_i64": 9,
+    "python_api_calls": 0,
+    "loop_store_lines": [
+      "%.218.prol = load i64, ptr %sunkaddr1, align 8",
+      "store i64 %.220.prol, ptr %.252.prol, align 8",
+      "%.218 = load i64, ptr %sunkaddr3, align 8",
+      "store i64 %.220, ptr %.252, align 8",
+      "%.218.1 = load i64, ptr %sunkaddr3, align 8",
+      "store i64 %.220.1, ptr %.252.1, align 8",
+      "%.218.2 = load i64, ptr %sunkaddr3, align 8",
+      "store i64 %.220.2, ptr %.252.2, align 8",
+      "%.218.3 = load i64, ptr %sunkaddr3, align 8",
+      "store i64 %.220.3, ptr %.252.3, align 8",
+      "%.218.4 = load i64, ptr %sunkaddr3, align 8",
+      "store i64 %.220.4, ptr %.252.4, align 8",
+      "%.218.5 = load i64, ptr %sunkaddr3, align 8",
+      "store i64 %.220.5, ptr %.252.5, align 8",
+      "%.218.6 = load i64, ptr %sunkaddr3, align 8",
+      "store i64 %.220.6, ptr %.252.6, align 8",
+      "%.218.7 = load i64, ptr %sunkaddr3, align 8",
+      "store i64 %.220.7, ptr %.252.7, align 8"
+    ]
+  },
+  "llvm_audit_passed": true,
+  "verification_passed": true,
+  "generated_utc": "2026-11-19T07:32:45.924585+00:00"
+}
