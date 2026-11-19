@@ -1,0 +1,3 @@
+[submodule "mpi-cuda-stencil"]
+	path = mpi-cuda-stencil
+	url = https://github.com/230103278/mpi-cuda-stencil-230103278.git
